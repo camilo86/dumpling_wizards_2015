@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import deansList.overnightRobot.commands.ExampleCommand;
+import deansList.overnightRobot.commands.drivetrain.TankDrive;
 import deansList.overnightRobot.subsystems.DriveTrain;
 
 
@@ -28,7 +28,7 @@ public class Robot extends IterativeRobot {
     public void robotInit() {
 		oi = new OI();
         // instantiate the command used for the autonomous period
-        autonomousCommand = new ExampleCommand();
+        autonomousCommand = new TankDrive();
     }
 	
 	public void disabledPeriodic() {

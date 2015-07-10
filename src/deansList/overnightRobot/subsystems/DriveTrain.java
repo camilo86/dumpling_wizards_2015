@@ -26,4 +26,9 @@ public class DriveTrain extends Subsystem {
     public void setRightPower(double pow) {
     	this.rightDrive.set(pow);
     }
+    
+    public void driveLR(double left, double right) {
+    	setLeftPower(left);
+    	setRightPower(right);
+    }
 }
